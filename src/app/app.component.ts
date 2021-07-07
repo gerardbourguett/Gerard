@@ -6,10 +6,7 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit {
-  ngAfterViewInit(): void {
-    throw new Error('Method not implemented.');
-  }
+export class AppComponent{
   
   
 }

@@ -12,6 +12,6 @@
     </button>
 </mat-toolbar>
 
-<div class="loader-container">
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+<div *ngIf="loaderService.isLoading | async" class="loader-container">
+    <mat-progress-bar color="warn" mode="query"></mat-progress-bar>
 </div>
