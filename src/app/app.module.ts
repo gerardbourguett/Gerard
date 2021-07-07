@@ -11,6 +11,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
+import { MatIconModule } from '@angular/material/icon';
+
 
 
 import { AppComponent } from './app.component';
@@ -19,6 +23,8 @@ import { ComunasComponent } from './components/APIDivision/comunas/comunas.compo
 import { RegionesComponent } from './components/APIDivision/regiones/regiones.component';
 import { ProvinciasComponent } from './components/APIDivision/provincias/provincias.component';
 import { APIMercadoPublicoComponent } from './components/apimercado-publico/apimercado-publico.component';
+import { HomedivisionComponent } from './components/APIDivision/homedivision/homedivision.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,9 @@ import { APIMercadoPublicoComponent } from './components/apimercado-publico/apim
     ComunasComponent,
     RegionesComponent,
     ProvinciasComponent,
-    APIMercadoPublicoComponent
+    APIMercadoPublicoComponent,
+    HomedivisionComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,10 @@ import { APIMercadoPublicoComponent } from './components/apimercado-publico/apim
     MatDialogModule,
     MatInputModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
