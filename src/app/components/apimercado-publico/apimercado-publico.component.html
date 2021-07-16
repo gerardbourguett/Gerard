@@ -1,34 +1,17 @@
-<div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
-    
-        <!--- Note that these columns can be defined in any order.
-            The actual rendered columns are set as a property on the row definition" -->
-    
-        <!-- Position Column -->
-        <ng-container matColumnDef="CodigoExterno">
-            <th mat-header-cell *matHeaderCellDef> Codigo Externo </th>
-            <td mat-cell *matCellDef="let element"> {{element.CodigoExterno}} </td>
-        </ng-container>
-    
-        <!-- Name Column -->
-        <ng-container matColumnDef="Nombre">
-            <th mat-header-cell *matHeaderCellDef> Nombre </th>
-            <td mat-cell *matCellDef="let element"> {{element.Nombre}} </td>
-        </ng-container>
-    
-        <!-- Weight Column -->
-        <ng-container matColumnDef="CodigoEstado">
-            <th mat-header-cell *matHeaderCellDef> Estado </th>
-            <td mat-cell *matCellDef="let element"> {{element.CodigoEstado}} </td>
-        </ng-container>
-    
-        <!-- FechaCierre Column -->
-        <ng-container matColumnDef="FechaCierre">
-            <th mat-header-cell *matHeaderCellDef> Fecha Cierre </th>
-            <td mat-cell *matCellDef="let element"> {{element.FechaCierre}} </td>
-        </ng-container>
-    
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
-</div>
+<!-- <div>
+    <h3>
+        Server-side Paging
+        <small>
+            <a href="https://github.com/swimlane/ngx-datatable/blob/master/src/app/paging/paging-scrolling-novirtualization.component.ts"
+                target="_blank">
+                Source
+            </a>
+        </small>
+    </h3>
+    <ngx-datatable class="material" [rows]="rows"
+        [columns]="[{ CodigoExterno: 'Codigo Externo' }, { Nombre: 'Nombre' }, { CodigoEstado: 'Codigo Estado' }, { FechaCierre: 'Fecha Cierre' }]" [columnMode]="ColumnMode.force"
+        [headerHeight]="50" [footerHeight]="50" rowHeight="auto" [scrollbarV]="true" [virtualization]="false"
+        [externalPaging]="true" [count]="page.totalElements" [offset]="page.pageNumber" [limit]="page.size"
+        (page)="setPage($event)">
+    </ngx-datatable>
+</div> -->

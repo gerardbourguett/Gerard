@@ -26,6 +26,7 @@ import { APIMercadoPublicoComponent } from './components/apimercado-publico/apim
 import { HomedivisionComponent } from './components/APIDivision/homedivision/homedivision.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InterceptorService } from './services/interceptor/interceptor.service';
+import { MercadoPublicoComponent } from './mercado-publico/mercado-publico.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { InterceptorService } from './services/interceptor/interceptor.service';
     ProvinciasComponent,
     APIMercadoPublicoComponent,
     HomedivisionComponent,
-    HeaderComponent
+    HeaderComponent,
+    MercadoPublicoComponent
   ],
   imports: [
     BrowserModule,

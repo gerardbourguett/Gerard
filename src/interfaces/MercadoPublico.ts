@@ -4,3 +4,4 @@ export interface MercadoPublico {
     CodigoEstado: string;
     FechaCierre: string;
 }
+
